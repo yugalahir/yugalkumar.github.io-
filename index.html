@@ -1,93 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yugal Kumar - Lead Data Scientist</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background: #f9f9f9; color: #333; }
-    h1, h2, h3 { color: #2c3e50; }
-    .section { margin-bottom: 30px; }
-    .contact, .links { margin-top: 10px; }
-    .skills ul, .certs ul, .experience ul { padding-left: 20px; }
-    .header { border-bottom: 2px solid #2c3e50; margin-bottom: 20px; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: url('https://images.unsplash.com/photo-1556761175-129418cb2dfe') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    section {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 1rem;
+      border-radius: 1rem;
+      animation: slideUp 1s ease-in-out;
+    }
+    h2 {
+      color: #00ffe0;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    a {
+      color: #00ffe0;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="header">
+  <header>
     <h1>Yugal Kumar</h1>
-    <h2>Lead Data Scientist</h2>
-    <p class="contact">📧 yugal.ahir@gmail.com</p>
-    <p class="links">
-      <a href="https://www.linkedin.com/in/yugal-ahir/">LinkedIn</a> |
-      <a href="https://github.com/yugalahir">GitHub</a>
-    </p>
-  </div>
-
-  <div class="section skills">
-    <h3>Technical Skills</h3>
+    <p>Lead Data Scientist | AI Innovator | LLM Specialist</p>
+  </header>
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:yugal.ahir@gmail.com">yugal.ahir@gmail.com</a></p>
+    <p>Phone: +91 9999 204 178</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yugal-ahir/" target="_blank">linkedin.com/in/yugal-ahir</a></p>
+    <p>GitHub: <a href="https://github.com/yugalahir" target="_blank">github.com/yugalahir</a></p>
+  </section>
+  <section>
+    <h2>Skills</h2>
     <ul>
-      <li>Programming: Python, R</li>
-      <li>LLMs: GPT-4, GPT-3, BERT, CLIP, LLaMA 2</li>
-      <li>ML/DL: Scikit-learn, TensorFlow, Keras</li>
-      <li>Forecasting: ARIMA, RFM, Stats Models</li>
-      <li>Databases: MySQL, MongoDB, PostgreSQL, BigQuery, Neo4j</li>
-      <li>Cloud: Azure, Google Cloud</li>
-      <li>NLP: NLTK, Spacy, Regex, Word2Vec</li>
-      <li>Web Scraping: Selenium, BeautifulSoup</li>
-      <li>Chatbots: RASA, OpenAI, WhatsApp Integration</li>
-      <li>Visualization: Power BI, Data Storytelling</li>
+      <li>Python, R, SQL, Neo4j, MongoDB, GCP, Azure</li>
+      <li>LLMs: GPT-4, BERT, OpenAI CLIP, LLaMA 2</li>
+      <li>ML/DL: Scikit Learn, TensorFlow, Keras, ARIMA</li>
+      <li>NLP: NLTK, spaCy, Regex, Word2Vec</li>
+      <li>Visualization: Power BI</li>
+      <li>Frameworks: Flask, FastAPI, Django</li>
     </ul>
-  </div>
-
-  <div class="section certs">
-    <h3>Certifications</h3>
+  </section>
+  <section>
+    <h2>Certifications</h2>
     <ul>
-      <li>IBM Data Science Professional (Coursera)</li>
-      <li>Udemy: NLP and Machine Learning by Jose Portilla</li>
-      <li>CognitiveClass.ai, Project Management (MSI)</li>
+      <li><a href="https://www.youracclaim.com/users/yugal-kumar" target="_blank">IBM Data Science Badge</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/5NE2K6PVCJEV" target="_blank">Coursera Data Science</a></li>
+      <li><a href="https://www.udemy.com/certificate/UC-6SPQW83S/" target="_blank">Udemy: Python for Data Science</a></li>
+      <li><a href="https://www.udemy.com/certificate/UC-5952234a-a646-4379-a7e8-4f0d99adb1d5/" target="_blank">Udemy: NLP with Python</a></li>
+      <li><a href="https://courses.cognitiveclass.ai/certificates/26986f634ce9457984006f334ab67f78" target="_blank">Cognitive Class: Python</a></li>
     </ul>
-  </div>
-
-  <div class="section education">
-    <h3>Education</h3>
+  </section>
+  <section>
+    <h2>Experience Snapshot</h2>
     <ul>
-      <li>MCA - IITM, GGSIPU (2012–2015)</li>
-      <li>BCA - JIMS, GGSIPU (2009–2012)</li>
-      <li>12th - Rotary Public School, CBSE (2009)</li>
-      <li>10th - Rotary Public School, CBSE (2007)</li>
+      <li>Lead Data Scientist at MGF Sourcing</li>
+      <li>Data Scientist at Ushyaku Software Solutions</li>
+      <li>Software Engineer at AuthBridge</li>
+      <li>Developer roles at Gamexs and VdoIT</li>
     </ul>
-  </div>
-
-  <div class="section experience">
-    <h3>Work Experience</h3>
-    <p><strong>Lead Data Scientist - MGF Sourcing</strong> (Jun 2022 – Present)</p>
-    <ul>
-      <li>Built LLM chatbot for MS SQL queries using ChatGPT-4</li>
-      <li>Led image comparison/search using Deep Learning & FAISS</li>
-      <li>Developed text-to-image search using OpenAI CLIP</li>
-      <li>Trained custom document retrieval chatbot using LLM + Azure Cognitive Search</li>
-      <li>Sales forecasting system with 96% accuracy</li>
-      <li>Real-time logistics document verification with CNN & NLP</li>
-    </ul>
-
-    <p><strong>Data Scientist - Ushyaku Software Solutions</strong> (Jan 2019 – May 2022)</p>
-    <ul>
-      <li>OCR engine with 97.7% accuracy using TensorFlow & Flask</li>
-      <li>RASA WhatsApp chatbot for order workflows</li>
-      <li>Sales analysis engine with 95.5% accuracy</li>
-    </ul>
-
-    <p><strong>Software Engineer - AuthBridge</strong> (Jun 2016 – Jan 2019)</p>
-    <ul>
-      <li>Document data extraction using CNN, ARIMA forecasting, fraud detection</li>
-    </ul>
-
-    <p><strong>Python Developer - Gamexs / VdoIT</strong> (2015 – 2016)</p>
-    <ul>
-      <li>Django web apps, REST APIs, CS231n course completion</li>
-    </ul>
-  </div>
+  </section>
+  <footer>
+    &copy; 2025 Yugal Kumar. All rights reserved.
+  </footer>
 </body>
 </html>
