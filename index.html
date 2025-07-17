@@ -1,124 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yugal Kumar - Lead Data Scientist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panacheo AI Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: url('https://images.unsplash.com/photo-1556761175-129418cb2dfe') no-repeat center center fixed;
-      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
       color: #ffffff;
-      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+      line-height: 1.6;
     }
     header {
+      padding: 2rem;
       text-align: center;
-      padding: 4rem 2rem 2rem;
-      background: rgba(0, 0, 0, 0.5);
-      animation: fadeIn 2s ease-in-out;
+      background: linear-gradient(90deg, #1e1e1e, #2c2c2c);
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      font-weight: 600;
     }
     header p {
-      font-size: 1.2rem;
       margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #bbbbbb;
     }
     section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #1a1a1a;
       padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      margin: 1rem;
       border-radius: 1rem;
-      animation: slideUp 1s ease-in-out;
+      box-shadow: 0 0 10px #222;
     }
-    h2 {
-      color: #00ffe0;
+    .card h3 {
+      color: #7ef9ff;
       margin-bottom: 1rem;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 1rem;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
     }
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
       font-size: 0.9rem;
-      background: rgba(0, 0, 0, 0.7);
+      background-color: #141414;
+      color: #888;
     }
-    a {
-      color: #00ffe0;
+    .cta {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .cta a {
+      display: inline-block;
+      background: #7ef9ff;
+      color: #000;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
       text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
+    .cta a:hover {
+      background: #00d4ff;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Yugal Kumar</h1>
-    <p>Lead Data Scientist | AI Innovator | LLM Specialist</p>
+    <h1>Panacheo AI Consulting</h1>
+    <p>Custom AI Agents • LLM Automation • Process Intelligence</p>
   </header>
+
   <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:yugal.ahir@gmail.com">yugal.ahir@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yugal-ahir/" target="_blank">linkedin.com/in/yugal-ahir</a></p>
-    <p>GitHub: <a href="https://github.com/yugalahir" target="_blank">github.com/yugalahir</a></p>
+    <h2>What We Offer</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Custom AI Workflows</h3>
+        <p>Tailored AI workflows trained on your business data to automate repetitive processes with precision.</p>
+      </div>
+      <div class="card">
+        <h3>LLM Integration</h3>
+        <p>Deploy OpenAI, Claude, or open-source LLMs within secure and scalable apps aligned to your goals.</p>
+      </div>
+      <div class="card">
+        <h3>Agentic Automation</h3>
+        <p>Smart autonomous agents to assist your operations, CRM, procurement, and more.</p>
+      </div>
+      <div class="card">
+        <h3>Vision + Data Fusion</h3>
+        <p>Combine images, documents, and structured data to create intelligent decision-making systems.</p>
+      </div>
+    </div>
   </section>
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, R, SQL, Neo4j, MongoDB, GCP, Azure</li>
-      <li>LLMs: GPT-4, BERT, OpenAI CLIP, LLaMA 2</li>
-      <li>ML/DL: Scikit Learn, TensorFlow, Keras, ARIMA</li>
-      <li>NLP: NLTK, spaCy, Regex, Word2Vec</li>
-      <li>Visualization: Power BI</li>
-      <li>Frameworks: Flask, FastAPI, Django</li>
-    </ul>
+
+  <section class="cta">
+    <h2>Let’s Build Your AI Edge</h2>
+    <p>Book a free strategy call to explore how AI can power your operations.</p>
+    <a href="#">Schedule Call</a>
   </section>
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li><a href="https://www.youracclaim.com/users/yugal-kumar" target="_blank">IBM Data Science Badge</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/5NE2K6PVCJEV" target="_blank">Coursera Data Science</a></li>
-      <li><a href="https://www.udemy.com/certificate/UC-6SPQW83S/" target="_blank">Udemy: Python for Data Science</a></li>
-      <li><a href="https://www.udemy.com/certificate/UC-5952234a-a646-4379-a7e8-4f0d99adb1d5/" target="_blank">Udemy: NLP with Python</a></li>
-      <li><a href="https://courses.cognitiveclass.ai/certificates/26986f634ce9457984006f334ab67f78" target="_blank">Cognitive Class: Python</a></li>
-    </ul>
-  </section>
-  <section>
-    <h2>Experience Snapshot</h2>
-    <ul>
-      <li>Lead Data Scientist at MGF Sourcing</li>
-      <li>Data Scientist at Ushyaku Software Solutions</li>
-      <li>Software Engineer at AuthBridge</li>
-      <li>Developer roles at Gamexs and VdoIT</li>
-    </ul>
-  </section>
+
   <footer>
-    &copy; 2025 Yugal Kumar. All rights reserved.
+    &copy; 2025 Panacheo AI Consulting. Built with intelligence.
   </footer>
 </body>
 </html>
